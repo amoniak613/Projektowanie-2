@@ -10,4 +10,11 @@ public class Task {
     public Category category;
     public Date timeStart;
     public Date timeStop;
+    public Task(String name, String description, Category category, Date timeStop) {
+        this.name = name;
+        this.description = description;
+        this.category = category;
+        this.timeStop = timeStop;
+        this.timeStart = new Date();
+    }
 }
