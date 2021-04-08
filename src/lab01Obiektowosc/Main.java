@@ -2,6 +2,7 @@ package lab01Obiektowosc;
 
 import pl.w_goroncej_wodzie.company.Category;
 
+import java.util.Calendar;
 import java.util.Date;
 
 public class Main {
@@ -13,5 +14,14 @@ public class Main {
         System.out.println(task1);
         System.out.println(task2);
         System.out.println(task3);
+
+	//      https://stackoverflow.com/questions/1311143/java-util-date-deleting-three-months-from-a-date
+        Date today = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(today);
+        c.add(Calendar.MONTH, 3);
+        Task task4 = new Task("Zadanie 4", "Zadanie do wykonania", Category.NEW, c.getTime());
+        System.out.println(task4.toString());
+
     }
 }
