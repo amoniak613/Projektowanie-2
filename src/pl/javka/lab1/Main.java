@@ -6,6 +6,23 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class Main {
+    public static void getDatailInfo(Object o) {
+        if (o != null && o instanceof Task) {
+            Task task = (Task) o;
+            System.out.println("taskName: " + task.getName());
+            System.out.println("taskDescription: " + task.getDescription());
+            System.out.println("taskCategory: " + task.getCategory());
+            System.out.println("taskDateTimeStart: " + task.getTimeStart());
+            System.out.println("taskDateTimeStop: " + task.getTimeStop());
+            if (o instanceof Subtask) {
+                Subtask subtask = (Subtask) o;
+                System.out.println("subtaskTitle: " + subtask.getSubtaskName());
+            } else {
+                System.out.println("subtaskTitle: B/D");
+            }
+        }
+
+    }
 
     public static void main(String[] args) {
         Task task1 = new Task("Nazwa 1", "Zadanie 1", Category.NEW, new Date());
@@ -15,7 +32,7 @@ public class Main {
         System.out.println(task2);
         System.out.println(task3);
 
-	//      https://stackoverflow.com/questions/1311143/java-util-date-deleting-three-months-from-a-date
+        //      https://stackoverflow.com/questions/1311143/java-util-date-deleting-three-months-from-a-date
         Date today = new Date();
         Calendar c = Calendar.getInstance();
         c.setTime(today);
@@ -35,5 +52,7 @@ public class Main {
         Object osubtask1 = new Subtask("Nazwa 1", "Zadanie 1", Category.NEW, new Date(), "Nazwa 1");
         Object osubtask2 = new Subtask("Nazwa 2", "Zadanie 2", Category.NEW, new Date(), "Nazwa 2");
         Object osubtask3 = new Subtask("Nazwa 3", "Zadanie 3", Category.NEW, new Date(), "Nazwa 3");
+
+        getDatailInfo(osubtask1);
     }
 }
