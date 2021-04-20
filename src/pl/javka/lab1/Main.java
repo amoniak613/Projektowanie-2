@@ -2,8 +2,10 @@ package pl.javka.lab1;
 
 import pl.javka.lab1.Category;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class Main {
     public static void getDatailInfo(Object o) {
@@ -39,6 +41,18 @@ public class Main {
         c.add(Calendar.MONTH, 3);
         Task task4 = new Task("Zadanie 4", "Zadanie do wykonania", Category.NEW, c.getTime());
         System.out.println(task4.toString());
+
+        System.out.println("Wyswietlenie za pomoca petli:");
+        List<Task> zadania = new ArrayList<>();
+        zadania.add(task1);
+        zadania.add(task2);
+        zadania.add(task3);
+        zadania.add(task4);
+
+        for (Task zadanie: zadania)
+        {
+            System.out.println(zadanie);
+        }
 
         // zadanie 2 lab 02
         Task subtask1 = new Subtask("Nazwa 1", "Zadanie 1", Category.NEW, new Date(), "Nazwa 1");
