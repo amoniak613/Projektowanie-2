@@ -23,5 +23,10 @@ public class Main {
         Task task4 = new Task("Zadanie 4", "Zadanie do wykonania", Category.NEW, c.getTime());
         System.out.println(task4.toString());
 
+        // zadanie 2 lab 02
+        Task subtask1 = new Subtask("Nazwa 1", "Zadanie 1", Category.NEW, new Date(), "Nazwa 1");
+        Task subtask2 = new Subtask("Nazwa 2", "Zadanie 2", Category.NEW, new Date(), "Nazwa 2");
+        Task subtask3 = new Subtask("Nazwa 3", "Zadanie 3", Category.NEW, new Date(), "Nazwa 3");
+
     }
 }
