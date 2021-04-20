@@ -1,4 +1,4 @@
-package pl.w_goroncej_wodzie.company;
+package pl.javka.lab0;
 
 public class dev1 {
     String author = "Artur Ziółkowski";

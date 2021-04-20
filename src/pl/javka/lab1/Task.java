@@ -1,6 +1,6 @@
-package lab01Obiektowosc;
+package pl.javka.lab1;
 
-import pl.w_goroncej_wodzie.company.Category;
+import pl.javka.lab1.Category;
 
 import java.util.Date;
 

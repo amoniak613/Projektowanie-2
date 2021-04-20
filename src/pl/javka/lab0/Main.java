@@ -1,6 +1,4 @@
-package pl.w_goroncej_wodzie.company;
-
-import java.sql.SQLOutput;
+package pl.javka.lab0;
 
 public class Main {
     public static void main(String[] args) {
