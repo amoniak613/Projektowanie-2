@@ -28,5 +28,12 @@ public class Main {
         Task subtask2 = new Subtask("Nazwa 2", "Zadanie 2", Category.NEW, new Date(), "Nazwa 2");
         Task subtask3 = new Subtask("Nazwa 3", "Zadanie 3", Category.NEW, new Date(), "Nazwa 3");
 
+        // zadanie 3, lab 02
+        Object otask1 = new Task("Nazwa 1", "Zadanie 1", Category.NEW, new Date());
+        Object otask2 = new Task("Nazwa 2", "Zadanie 2", Category.DONE, new Date());
+        Object otask3 = new Task("Nazwa 3", "Zadanie 3", Category.IN_PROGRESS, new Date());
+        Object osubtask1 = new Subtask("Nazwa 1", "Zadanie 1", Category.NEW, new Date(), "Nazwa 1");
+        Object osubtask2 = new Subtask("Nazwa 2", "Zadanie 2", Category.NEW, new Date(), "Nazwa 2");
+        Object osubtask3 = new Subtask("Nazwa 3", "Zadanie 3", Category.NEW, new Date(), "Nazwa 3");
     }
 }
