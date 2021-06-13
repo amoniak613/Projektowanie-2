@@ -34,4 +34,13 @@ public class Author {
     public void setPlec(String plec) {
         this.plec = plec;
     }
+
+    @Override
+    public String toString() {
+        return "Author{" +
+                "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", plec='" + plec + '\'' +
+                '}';
+    }
 }

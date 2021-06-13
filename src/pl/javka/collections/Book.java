@@ -6,11 +6,11 @@ public class Book {
     private String tytul;
     private float cena;
     private  int rokWydania;
-    private List<String> autorzy;
+    private List<Author> autorzy;
     private Gatunek gatunek;
 
 
-    public Book(String tytul, float cena, int rokWydania, List<String> autorzy, Gatunek gatunek) {
+    public Book(String tytul, float cena, int rokWydania, List<Author> autorzy, Gatunek gatunek) {
         this.tytul = tytul;
         this.cena = cena;
         this.rokWydania = rokWydania;
@@ -42,11 +42,11 @@ public class Book {
         this.rokWydania = rokWydania;
     }
 
-    public List<String> getAutorzy() {
+    public List<Author> getAutorzy() {
         return autorzy;
     }
 
-    public void setAutorzy(List<String> autorzy) {
+    public void setAutorzy(List<Author> autorzy) {
         this.autorzy = autorzy;
     }
 
@@ -56,5 +56,16 @@ public class Book {
 
     public void setGatunek(Gatunek gatunek) {
         this.gatunek = gatunek;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "tytul='" + tytul + '\'' +
+                ", cena=" + cena +
+                ", rokWydania=" + rokWydania +
+                ", autorzy=" + autorzy +
+                ", gatunek=" + gatunek +
+                '}';
     }
 }
